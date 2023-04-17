@@ -1,6 +1,4 @@
 *{
-    
-    
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -70,4 +68,26 @@
     padding: 2rem 0;
     text-align: normal;
 
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    border: 1px solid #333;
+    padding: 1rem;
+    font-weight: 600;
+}
+td{
+    border: 1px solid #333;
+    padding: 1rem;
+}
+thead{
+    background-color: #333;
+    color: #fff;
+}
+tbody{
+    background-color: #fff;
+    color: #333;
 }
