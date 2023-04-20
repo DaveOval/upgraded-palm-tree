@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/styles/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contactanos para tus pedidos.</h1>
+    </header>
+    <main>
+      <form action="" method="post"> <!-- Action y methd  -->
+        <fieldset>
+            <legend>Datos basicos de contacto</legend>
+
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Montserrath" name="name" id="name" required>
+
+            <label for="lastname">Apellidos</label>
+            <input type="text" placeholder="Sanchez" name="lastname" id="lastname" required>
+
+            <label for="mail">Correo Electronico</label>
+            <input type="mail" placeholder="email" name="mail" id="mail" required autocomplete="email">
+            
+            <label for="phone">Numero de telefono</label>
+            <input type="number" placeholder="numero de telefono" name="phone" id="phone" required>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos del pedido</legend>
+            <label for="numbe-of-h">Cuantas hamburguesas necesitas?</label>
+            <input id="numbe-of-h" type="number" min="20" max="500" required placeholder="min 20 a 200">
+
+            <label for="number-of-a">Cuantos litros de agua necesitas?</label>
+            <input id="number-of-a" type="number" min="1" max="20" placeholder="min 20 a 200">
+
+            <label for="fecha">Fecha del evento</label>
+            <input type="date" name="fecha" id="fecha" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de envio</legend>
+          <select name="stores" id="stores">
+            <option selected disabled>Elige una opcion</option>
+            <option value="Sucursal Andares">Sucursal Andares</option>
+            <option value="Sucursal Forum">Sucursal Forum</option>
+            <option value="Sucursal Centro Magno">Sucursal Centro Magno</option>
+          </select>
+
+          <input list="storetwo">
+          <datalist id="storetwo">
+            <option value="Sucursal Andares" >Sucursal Andares</option>
+            <option value="Sucursal Forum" >Sucursal Forum</option>
+            <option value="Sucursal Centro Magno" >Sucursal Centro Magno</option>
+          </datalist>
+
+          <div class="radio">
+            <label for="sucursal">Recoger en sucrusal</label>
+            <input type="radio" name="type-of-delivery" id="sucursal">
+          </div>
+          <div class="radio">
+            <label for="delivery">Envio a domicilio</label>
+            <input type="radio" name="type-of-delivery" id="delivery">
+          </div>
+          <div class="check">
+            <label for="terms">acepto terminos y condiciones</label>
+            <input type="checkbox" name="terms" id="terms">
+          </div>
+
+          <button type="reset">Reiniciar formulario</button>
+          <button type="submit">Enviar</button>
+
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
